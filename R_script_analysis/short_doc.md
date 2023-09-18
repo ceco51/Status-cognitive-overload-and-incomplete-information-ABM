@@ -38,6 +38,6 @@ Next, the user must enter the required values in the dialogue boxes that will op
 
 **Caveats** 
 
-In the loaded R code, the calculations on some network metrics are not executed annotated (namely those for centering and scaling density, G50, and diameter). The reason for this is that they have no (or minimal) variability for many parameter combinations. For this reason, `ggplot2` does not draw them in violin plots. However, their summary statistics can be found in the latex tables, along with the values for the number of components and the size of the largest component. The user can always insert those metrics, if needed.
+In the loaded R code, the calculations on some network metrics are not executed (namely those for centering and scaling density, G50, and diameter). The reason for this is that they have no (or minimal) variability for many parameter combinations. For this reason, `ggplot2` does not draw them in violin plots. However, their summary statistics can be found in the latex tables, along with the values for the number of components and the size of the largest component. The user can always insert those metrics, if needed.
 
 Finally, the user can easily expand the script by adding any macro network metric. In fact, the script is designed in a modular fashion. 
