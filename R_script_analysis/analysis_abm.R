@@ -144,7 +144,7 @@ analysis_ABM <- function (num_dir = 2) {
                               column_names <- gsub("^net_", "", metrics_names)
                               column_names <- tools::toTitleCase(column_names)
                               final <- tibble::tibble(
-                                       !!!setNames(lapply(metrics_names, get), column_names)
+                                       !!!setNames(lapply(metrics_names, get, envir = environment()), column_names)
                                        )
 
                               file_sep <- if (Hmisc::capitalize(os) == "Windows") "\\" else "/"
